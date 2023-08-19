@@ -6,10 +6,10 @@ export default function App(){
   //definition of the funtions to be used in the state
   const [count, setCount]=React.useState(0)
   function Add(){
-    setCount(count+1)
+    setCount( prevCount => prevCount+1)
   }
   function minus(){
-    setCount(count-1)
+    setCount(prevCount => prevCount-1)
   }
   return(
     <div>
